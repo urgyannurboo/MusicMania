@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-color: rgba(19, 101, 98, 0.989);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 67px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 14px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.homebutton {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    min-height: 73vh;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 25px auto;
+    width: 90%;
+    border-radius: 25px;
+    padding: 34px;
+    background-image: url('images/background_img.jpg');
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 120px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 10px;
+}
+
+.songItem {
+    height: 38px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.songItem img {
+    width: 35px;
+    margin: 0 23px;
+    border-radius: 35px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    margin: 0 23px;
+}
+
+.songInfo {
+    position: absolute;
+    left: 9.35vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.searchBar {
+    display: flex;
+    padding-left: 500px;
+}
+
+.drop {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbarDropdown {
+    background-color: black;
+    color: white
+}
+.dropdown-item {
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .brand img {
+        margin: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .searchBar {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .songInfo {
+        position: relative;
+        left: auto;
+        text-align: center;
+    }
+
+    #myProgressBar {
+        width: 100%;
+    }
+
+    .songItem {
+        height: 60px;
+    }
+}
